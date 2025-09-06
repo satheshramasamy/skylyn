@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description"
+        content="Comprehensive IoT solutions including consulting, smart home, consumer IoT, industrial IoT, and healthcare IoT to drive digital transformation and connected innovation.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IoT Solutions | Your Company</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <style>
+     
+        .hero-section {
+            background: linear-gradient(to right, #4f46e5, #9333ea);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+            animation: fadeIn 1.5s ease;
+        }
+
+        .hero-section h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            animation: slideDown 1.2s ease;
+        }
+
+        .hero-section p {
+            font-size: 1.1rem;
+            margin-top: 10px;
+            animation: fadeInUp 1.8s ease;
+        }
+
+        .services-grid {
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+
+        .service-card {
+            background: white;
+            border-radius: 12px;
+            padding: 30px 20px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            animation: zoomIn 1s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .service-card i {
+            font-size: 40px;
+            color: #198754;
+            margin-bottom: 15px;
+            animation: bounce 2s infinite;
+        }
+
+        .service-card h3 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .service-card p {
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideDown {
+            from {
+                transform: translateY(-30px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                transform: translateY(30px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes zoomIn {
+            from {
+                transform: scale(0.9);
+                opacity: 0;
+            }
+
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        @keyframes bounce {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-6px);
+            }
+        }
+
+        .navmenu ul ul {
+            display: none;
+            position: absolute;
+            background: #fff;
+            padding: 10px 0;
+            list-style: none;
+            z-index: 1000;
+        }
+
+        .navmenu li.dropdown:hover>ul {
+            display: block;
+        }
+
+        .navmenu li.dropdown ul li.dropdown:hover>ul {
+            display: block;
+            left: 100%;
+            top: 0;
+        }
+    </style>
+
+    <link href="main.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="d-flex align-items-center sticky-top header" id="header">
+        <div class="d-flex position-relative align-items-center container">
+
+            <a href="index.html" class="d-flex align-items-center me-auto logo">
+                <img src="Images/client_logo.png" alt="Skylyn logo">
+                <h1 class="client_title client_name">Skylyn</h1>
+            </a>
+
+            <nav class="navmenu" id="navmenu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+
+                    <li><a href="about.html">About Us</a></li>
+
+                    <li class="dropdown">
+                        <a href="#" class="active"><span>Services</span> <i
+                                class="bi bi-chevron-down toggle-dropdown"></i></a>
+                        <ul>
+                            <li><a href="embedded-product-development.html">Embedded Product Development</a></li>
+                            <li><a href="hardware-design.html">Hardware Design</a></li>
+                            <li><a href="embedded-system-design.html">Embedded System Design</a></li>
+                            <li><a href="white-label-oem-services.html">White Label & OEM Services</a></li>
+                            <li><a href="mechanical-engineering.html">Mechanical Engineering</a></li>
+                            <li><a href="iot-solution.html">IoT Solution</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#"><span>Products</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                        <ul>
+                            <li><a href="#">Product 1</a></li>
+
+                            <li class="dropdown">
+                                <a href="#"><span>Product 2</span> <i
+                                        class="bi bi-chevron-down toggle-dropdown"></i></a>
+                                <ul>
+                                    <li><a href="#">Sub Product 2.1</a></li>
+                                    <li><a href="#">Sub Product 2.2</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown">
+                                <a href="#"><span>Product 3</span> <i
+                                        class="bi bi-chevron-down toggle-dropdown"></i></a>
+                                <ul>
+                                    <li><a href="#">Sub Product 3.1</a></li>
+                                    <li><a href="#">Sub Product 3.2</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li><a href="index.html">Contact Us</a></li>
+                </ul>
+
+                <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+            </nav>
+
+        </div>
+    </header>
+
+    <section class="hero-section">
+        <h1 style="color: #fff;">IoT Solutions</h1>
+        <p>Comprehensive IoT solutions driving digital transformation, innovation, and smarter connected experiences.
+        </p>
+    </section>
+
+    <section class="container services-grid">
+        <div class="row g-4">
+
+            <div class="col-lg-4 col-md-6">
+                <div class="service-card">
+                    <i class="bi bi-lightbulb"></i>
+                    <h3>IoT Consulting</h3>
+                    <p>We guide businesses through strategy, architecture, technology selection, and deployment to
+                        ensure scalable,
+                        secure, and impactful IoT adoption.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="service-card">
+                    <i class="bi bi-house-door"></i>
+                    <h3>Smart Home</h3>
+                    <p>Connected lighting, climate, security, and energy management systems controlled via apps or voice
+                        assistants
+                        for modern living.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="service-card">
+                    <i class="bi bi-phone"></i>
+                    <h3>Consumer IoT</h3>
+                    <p>Wearables, connected appliances, and lifestyle IoT products focused on intuitive experiences,
+                        performance,
+                        and seamless integration.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="service-card">
+                    <i class="bi bi-gear"></i>
+                    <h3>Industrial IoT</h3>
+                    <p>Enabling predictive maintenance, real-time visibility, and smarter operations in manufacturing,
+                        logistics,
+                        and energy sectors.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="service-card">
+                    <i class="bi bi-heart-pulse"></i>
+                    <h3>Healthcare IoT</h3>
+                    <p>Connected medical devices, remote monitoring, and secure health platforms to improve care and
+                        streamline
+                        clinical workflows.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="dark-background footer" id="footer">
+        <div class="footer-top container">
+            <div class="gy-4 row">
+
+                <div class="col-lg-4 col-md-6 footer-about">
+                    <a href="index.html" class="logo d-flex align-items-center">
+                        <span class="client_name">Skylyn</span>
+                    </a>
+                    <div class="pt-3 footer-contact">
+                        <p>42 Attur Road</p>
+                        <p>Salem, Tamil Nadu 636456</p>
+                        <p class="mt-3"><strong>Phone:</strong> <span>+91 98765 43210</span></p>
+                        <p><strong>Email:</strong> <span>info@skylyntechnologies.com</span></p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-3 footer-links">
+                    <h4>Quick Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-3 footer-links">
+                    <h4>Engineering Services</h4>
+                    <ul>
+                        <li><a href="embedded-product-development.html">Embedded Product Development</a></li>
+                        <li><a href="hardware-design.html">Hardware Design</a></li>
+                        <li><a href="embedded-system-design.html">Embedded System Design</a></li>
+                        <li><a href="white-label-oem-services.html">White Label & OEM Services</a></li>
+                        <li><a href="mechanical-engineering.html">Mechanical Engineering</a></li>
+                        <li><a href="iot-solution.html">IoT Solution</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="copyright text-center mt-4 d-flex justify-content-evenly container">
+            <div class="header-social-links">
+                <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>&nbsp;&nbsp;
+                <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>&nbsp;&nbsp;
+                <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>&nbsp;&nbsp;
+                <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            </div>
+
+            <p>
+                © <span>Copyright</span>
+                <strong class="client_name px-1">
+                    <a href="index.html">Skylyn</a>
+                </strong>
+                <span>All Rights Reserved</span>
+            </p>
+        </div>
+
+    </footer>
+</body>
+
+</html>

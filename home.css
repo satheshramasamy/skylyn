@@ -116,3 +116,103 @@
         -webkit-line-clamp: unset;
     }
 }
+
+/* Section background */
+#key-capabilities {
+    background: url('kc.png') no-repeat center center/cover;
+    padding: 60px 0;
+    color: #fff;
+}
+
+#key-capabilities .key-title {
+    text-align: left;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+    border-bottom: 4px solid #00adef;
+    display: inline-block;
+    padding-bottom: 8px;
+}
+
+#key-capabilities .key-cards {}
+
+#key-capabilities .key-card {
+    background: rgba(0, 0, 0, 0.7);
+    border: 1px solid #fff;
+    padding: 20px;
+    height: 100%;
+    transition: transform 0.3s ease;
+    margin-bottom: 20px;
+    border-radius: 7px;
+}
+
+.card_heading_black {
+    color: #fff;
+}
+
+
+#key-capabilities .key-card:hover {
+    transform: translateY(-5px);
+}
+
+#key-capabilities .key-icon {
+    font-size: 2.5rem;
+    color: #00adef;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#key-capabilities h3 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#key-capabilities p {
+    font-size: 0.95rem;
+    color: #ddd;
+    line-height: 1.6;
+}
+
+.home-page .row>* {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+
+.key-card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.key-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.key-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Dropdown menu hidden by default */
+.navmenu ul ul {
+    display: none;
+    position: absolute;
+    background: #fff;
+    padding: 10px 0;
+    list-style: none;
+    z-index: 1000;
+}
+
+/* Show dropdown on hover */
+.navmenu li.dropdown:hover>ul {
+    display: block;
+}
+
+/* Fix for nested dropdown alignment */
+.navmenu li.dropdown ul li.dropdown:hover>ul {
+    display: block;
+    left: 100%;
+    top: 0;
+}

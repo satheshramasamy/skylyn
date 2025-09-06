@@ -7,13 +7,11 @@
     <title>Skylyn Technologies Private Limited-About Us</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
-
     <link href="Images/favicon.png" rel="icon">
-    <!-- <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
-
     <link href="https://fonts.googleapis.com" rel="preconnect">
     <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
 
     <link href="modules/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -21,29 +19,42 @@
     <link href="modules/aos/aos.css" rel="stylesheet">
     <link href="modules/glightbox/css/glightbox.min.css" rel="stylesheet">
     <link href="modules/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="main.css" rel="stylesheet">
     <link href="about.css" rel="stylesheet">
     <link href="home.css" rel="stylesheet">
 
 </head>
 
-<body class="about-page">
+<body class="about-total-content about-page">
 
-    <header id="header" class="header d-flex align-items-center sticky-top">
-        <div class="container position-relative d-flex align-items-center">
+    <header class="d-flex align-items-center sticky-top header" id="header">
+        <div class="d-flex position-relative align-items-center container">
 
-            <a href="index.html" class="logo d-flex align-items-center me-auto">
-                <img src="assets/img/client_logo.png" alt="">
-                <h1 class="client_name">Skylyn</h1>
+            <a href="index.html" class="d-flex align-items-center me-auto logo">
+                <img src="Images/client_logo.png" alt="Skylyn logo">
+                <h1 class="client_title client_name">Skylyn</h1>
             </a>
 
-            <nav id="navmenu" class="navmenu">
+            <nav class="navmenu" id="navmenu">
                 <ul>
                     <li><a href="index.html">Home</a></li>
 
                     <li><a href="about.html" class="active">About Us</a></li>
+
+                    <li class="dropdown">
+                        <a href="#"><span>Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                        <ul>
+                            <li><a href="embedded-product-development.html">Embedded Product Development</a></li>
+                            <li><a href="hardware-design.html">Hardware Design</a></li>
+                            <li><a href="embedded-system-design.html">Embedded System Design</a></li>
+                            <li><a href="white-label-oem-services.html">White Label & OEM Services</a></li>
+                            <li><a href="mechanical-engineering.html">Mechanical Engineering</a></li>
+                            <li><a href="iot-solution.html">IoT Solution</a></li>
+                        </ul>
+                    </li>
 
                     <li class="dropdown">
                         <a href="#"><span>Products</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
@@ -70,31 +81,6 @@
                         </ul>
                     </li>
 
-                    <li class="dropdown">
-                        <a href="#"><span>Solutions</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                        <ul>
-                            <li class="dropdown">
-                                <a href="#"><span>Solution 1</span> <i
-                                        class="bi bi-chevron-down toggle-dropdown"></i></a>
-                                <ul>
-                                    <li><a href="#">Sub Solution 1.1</a></li>
-                                    <li><a href="#">Sub Solution 1.2</a></li>
-                                </ul>
-                            </li>
-
-                            <li><a href="#">Solution 2</a></li>
-
-                            <li class="dropdown">
-                                <a href="#"><span>Solution 3</span> <i
-                                        class="bi bi-chevron-down toggle-dropdown"></i></a>
-                                <ul>
-                                    <li><a href="#">Sub Solution 3.1</a></li>
-                                    <li><a href="#">Sub Solution 3.2</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-
                     <li><a href="index.html">Contact Us</a></li>
                 </ul>
 
@@ -104,7 +90,7 @@
         </div>
     </header>
 
-    <main class="main">
+    <main class="about-main-tag main">
 
         <div class="page-title accent-background">
             <div class="d-lg-flex flex-wrap justify-content-around align-items-center">
@@ -118,29 +104,33 @@
             </div>
         </div>
 
-        <section id="about" class="about section">
+        <section class="about section" id="about">
             <div class="container">
-                <div class="row position-relative">
+                <div class="position-relative row">
 
                     <div class="col-lg-7 about-img" data-aos="zoom-out" data-aos-delay="200">
                         <img src="Images/about-new.jpg" alt="About Skylyn Technologies">
                     </div>
 
                     <div class="col-lg-7" data-aos="fade-up" data-aos-delay="100">
-                        <h2 class="inner-title who_we_are">Who We Are</h2>
+                        <h2 class="who_we_are inner-title ">Who We Are</h2>
                         <div class="our-story">
                             <p>
                                 <strong class="skylyn_title">
-                    Skylyn Technologies Private Limited
-                    </strong> is a technology-driven engineering company focused on delivering smart, scalable, and certified IoT solutions. We help businesses bring connected products to life—faster, smarter, and with
-                                confidence.
+                                    Skylyn Technologies Private Limited
+
+                                </strong> is a technology-driven engineering company focused on delivering smart,
+                                scalable, and certified IoT solutions. We help businesses bring connected products to
+                                life—faster, smarter, and with confidence.
                             </p>
 
                             <h3>Our Mission</h3>
-                            <p>To accelerate innovation by providing reliable, production-ready engineering solutions that bridge the gap between concept and market.</p>
+                            <p>To accelerate innovation by providing reliable, production-ready engineering solutions
+                                that bridge the gap between concept and market.</p>
 
                             <h3>Our Vision</h3>
-                            <p>To be a trusted global partner for IoT and embedded product engineering, known for quality, scalability, and technological excellence.</p>
+                            <p>To be a trusted global partner for IoT and embedded product engineering, known for
+                                quality, scalability, and technological excellence.</p>
                         </div>
                     </div>
 
@@ -150,17 +140,15 @@
 
     </main>
 
-    <footer id="footer" class="footer dark-background">
-
-        <div class="container footer-top">
-            <div class="row gy-4">
+    <footer class="dark-background footer" id="footer">
+        <div class="footer-top container">
+            <div class="gy-4 row">
 
                 <div class="col-lg-4 col-md-6 footer-about">
                     <a href="index.html" class="logo d-flex align-items-center">
                         <span class="client_name">Skylyn</span>
                     </a>
-
-                    <div class="footer-contact pt-3">
+                    <div class="pt-3 footer-contact">
                         <p>42 Attur Road</p>
                         <p>Salem, Tamil Nadu 636456</p>
                         <p class="mt-3"><strong>Phone:</strong> <span>+91 98765 43210</span></p>
@@ -173,29 +161,25 @@
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About Us</a></li>
-                        <!-- <li><a href="#">Products</a></li>
-                        <li><a href="#">Solutions</a></li> -->
-                        <!-- <li><a href="contact.html">Contact Us</a></li> -->
                     </ul>
                 </div>
 
                 <div class="col-lg-4 col-md-3 footer-links">
                     <h4>Engineering Services</h4>
                     <ul>
-                        <li><a href="index.html">Embedded Product Development</a></li>
-                        <li><a href="index.html">Hardware Design</a></li>
-                        <li><a href="index.html">Embedded System Design</a></li>
-                        <li><a href="index.html">White Label & OEM Services</a></li>
-                        <li><a href="index.html">Mechanical Engineering</a></li>
-                        <li><a href="index.html">IoT Solution</a></li>
+                        <li><a href="embedded-product-development.html">Embedded Product Development</a></li>
+                        <li><a href="hardware-design.html">Hardware Design</a></li>
+                        <li><a href="embedded-system-design.html">Embedded System Design</a></li>
+                        <li><a href="white-label-oem-services.html">White Label & OEM Services</a></li>
+                        <li><a href="mechanical-engineering.html">Mechanical Engineering</a></li>
+                        <li><a href="iot-solution.html">IoT Solution</a></li>
                     </ul>
                 </div>
-
 
             </div>
         </div>
 
-        <div class="container copyright text-center mt-4 d-flex justify-content-evenly">
+        <div class="copyright text-center mt-4 d-flex justify-content-evenly container">
             <div class="header-social-links">
                 <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>&nbsp;&nbsp;
                 <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>&nbsp;&nbsp;
@@ -205,15 +189,15 @@
 
             <p>
                 © <span>Copyright</span>
-                <strong class="px-1 client_name">
-    <a href="index.html">Skylyn</a>
-  </strong>
+                <strong class="client_name px-1">
+                    <a href="index.html">Skylyn</a>
+                </strong>
                 <span>All Rights Reserved</span>
             </p>
         </div>
     </footer>
 
-    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+    <a href="#" class="d-flex align-items-center justify-content-center scroll-top" id="scroll-top"><i
             class="bi bi-arrow-up-short"></i></a>
 
     <div id="preloader"></div>
@@ -226,7 +210,6 @@
     <script src="modules/isotope-layout/isotope.pkgd.min.js"></script>
     <script src="modules/waypoints/noframework.waypoints.js"></script>
     <script src="modules/swiper/swiper-bundle.min.js"></script>
-
     <script src="script.js"></script>
 
 </body>

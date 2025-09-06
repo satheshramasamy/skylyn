@@ -8,41 +8,51 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
 
-    <!-- Favicons -->
     <link href="Images/favicon.png" rel="icon">
-    <!-- <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
-
     <link href="https://fonts.googleapis.com" rel="preconnect">
     <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-
     <link href="modules/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="modules/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
     <link href="modules/aos/aos.css" rel="stylesheet">
     <link href="modules/glightbox/css/glightbox.min.css" rel="stylesheet">
     <link href="modules/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="main.css" rel="stylesheet">
     <link href="home.css" rel="stylesheet">
 </head>
 
-<body class="index-page">
+<body class="home-total-content index-page home-page">
 
-    <header id="header" class="header d-flex align-items-center sticky-top">
-        <div class="container position-relative d-flex align-items-center">
+    <header class="d-flex align-items-center sticky-top header" id="header">
+        <div class="d-flex position-relative align-items-center container">
 
-            <a href="index.html" class="logo d-flex align-items-center me-auto">
-                <img src="Images/client_logo.png" alt="Client logo">
-                <h1 class="client_name">Skylyn</h1>
+            <a href="index.html" class="d-flex align-items-center me-auto logo">
+                <img src="Images/client_logo.png" alt="Skylyn logo">
+                <h1 class="client_title client_name">Skylyn</h1>
             </a>
 
-            <nav id="navmenu" class="navmenu">
+            <nav class="navmenu" id="navmenu">
                 <ul>
                     <li><a href="index.html" class="active">Home</a></li>
 
                     <li><a href="about.html">About Us</a></li>
+
+                    <li class="dropdown">
+                        <a href="#"><span>Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                        <ul>
+                            <li><a href="embedded-product-development.html">Embedded Product Development</a></li>
+                            <li><a href="hardware-design.html">Hardware Design</a></li>
+                            <li><a href="embedded-system-design.html">Embedded System Design</a></li>
+                            <li><a href="white-label-oem-services.html">White Label & OEM Services</a></li>
+                            <li><a href="mechanical-engineering.html">Mechanical Engineering</a></li>
+                            <li><a href="iot-solution.html">IoT Solution</a></li>
+                        </ul>
+                    </li>
 
                     <li class="dropdown">
                         <a href="#"><span>Products</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
@@ -69,31 +79,6 @@
                         </ul>
                     </li>
 
-                    <li class="dropdown">
-                        <a href="#"><span>Solutions</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                        <ul>
-                            <li class="dropdown">
-                                <a href="#"><span>Solution 1</span> <i
-                                        class="bi bi-chevron-down toggle-dropdown"></i></a>
-                                <ul>
-                                    <li><a href="#">Sub Solution 1.1</a></li>
-                                    <li><a href="#">Sub Solution 1.2</a></li>
-                                </ul>
-                            </li>
-
-                            <li><a href="#">Solution 2</a></li>
-
-                            <li class="dropdown">
-                                <a href="#"><span>Solution 3</span> <i
-                                        class="bi bi-chevron-down toggle-dropdown"></i></a>
-                                <ul>
-                                    <li><a href="#">Sub Solution 3.1</a></li>
-                                    <li><a href="#">Sub Solution 3.2</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-
                     <li><a href="index.html">Contact Us</a></li>
                 </ul>
 
@@ -103,17 +88,18 @@
         </div>
     </header>
 
-    <main class="main">
+    <main class="home-main-tag main">
 
-        <section id="hero" class="hero section dark-background">
+        <section class="section dark-background hero" id="hero">
 
-            <div id="hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
-
+            <div class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000"
+                id="hero-carousel">
                 <div class="carousel-item active">
                     <img src="Images/pcb-1.jpeg" alt="Innovation Banner">
                     <div class="container">
                         <h2>Smart. Scalable. Future-Ready. Certified Engineering for Tomorrow’s IoT Innovations</h2>
-                        <p>We transform ideas into intelligent, production-grade IoT solutions—designed for speed, scale, and compliance from day one.</p>
+                        <p>We transform ideas into intelligent, production-grade IoT solutions—designed for speed,
+                            scale, and compliance from day one.</p>
                         <a href="about.html" class="btn-get-started">Read More</a>
                     </div>
                 </div>
@@ -122,7 +108,8 @@
                     <img src="Images/automation-2.jpeg" alt="Teamwork Banner">
                     <div class="container">
                         <h2>Engineering Innovation. Delivering Excellence.</h2>
-                        <p>From concept to certification, we specialize in hardware, firmware, testing, and manufacturing—helping businesses launch connected products faster and smarter.</p>
+                        <p>From concept to certification, we specialize in hardware, firmware, testing, and
+                            manufacturing—helping businesses launch connected products faster and smarter.</p>
                         <a href="about.html" class="btn-get-started">Read More</a>
                     </div>
                 </div>
@@ -131,48 +118,50 @@
                     <img src="Images/automation-3.jpg" alt="Digital Solutions Banner">
                     <div class="container">
                         <h2>Build Smarter. Launch Faster. Scale Better.</h2>
-                        <p>At Skylyn Technologies, we deliver full-stack IoT engineering and manufacturing services that power the next generation of smart devices..</p>
+                        <p>At Skylyn Technologies, we deliver full-stack IoT engineering and manufacturing services that
+                            power the next generation of smart devices..</p>
                         <a href="about.html" class="btn-get-started">Read More</a>
                     </div>
                 </div>
 
-                <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+                <a href="#hero-carousel" class="carousel-control-prev" role="button" data-bs-slide="prev">
+                    <span class="bi bi-chevron-left carousel-control-prev-icon" aria-hidden="true"></span>
                 </a>
 
-                <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
-                    <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+                <a href="#hero-carousel" class="carousel-control-next" role="button" data-bs-slide="next">
+                    <span class="bi bi-chevron-right carousel-control-next-icon" aria-hidden="true"></span>
                 </a>
-
                 <ol class="carousel-indicators"></ol>
-
             </div>
-
         </section>
 
-        <section id="about" class="about section">
+        <section class="about section" id="about">
             <div class="container">
-                <div class="row position-relative">
+                <div class="position-relative row">
 
                     <div class="col-lg-7 about-img" data-aos="zoom-out" data-aos-delay="200">
                         <img src="Images/about-new.jpg" alt="About Skylyn Technologies">
                     </div>
 
                     <div class="col-lg-7" data-aos="fade-up" data-aos-delay="100">
-                        <h2 class="inner-title who_we_are">Who We Are</h2>
+                        <h2 class="who_we_are inner-title ">Who We Are</h2>
                         <div class="our-story">
                             <p>
                                 <strong class="skylyn_title">
-      Skylyn Technologies Private Limited
-    
-  </strong> is a technology-driven engineering company focused on delivering smart, scalable, and certified IoT solutions. We help businesses bring connected products to life—faster, smarter, and with confidence.
+                                    Skylyn Technologies Private Limited
+
+                                </strong> is a technology-driven engineering company focused on delivering smart,
+                                scalable, and certified IoT solutions. We help businesses bring connected products to
+                                life—faster, smarter, and with confidence.
                             </p>
 
                             <h3>Our Mission</h3>
-                            <p>To accelerate innovation by providing reliable, production-ready engineering solutions that bridge the gap between concept and market.</p>
+                            <p>To accelerate innovation by providing reliable, production-ready engineering solutions
+                                that bridge the gap between concept and market.</p>
 
                             <h3>Our Vision</h3>
-                            <p>To be a trusted global partner for IoT and embedded product engineering, known for quality, scalability, and technological excellence.</p>
+                            <p>To be a trusted global partner for IoT and embedded product engineering, known for
+                                quality, scalability, and technological excellence.</p>
                         </div>
                     </div>
 
@@ -180,95 +169,126 @@
             </div>
         </section>
 
-        <section id="services" class="services section light-background">
+        <section class="section services" id="key-capabilities">
             <div class="container">
-                <div class="row gy-4">
+                <h2 class="key-title">KEY CAPABILITIES</h2>
 
-                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                        <div class="service-item item-cyan position-relative">
-                            <div class="icon">
-                                <i class="bi bi-pc-display"></i>
+                <div class="row key-cards">
+
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <a href="embedded-product-development.html">
+                            <div class="key-card">
+                                <div class="key-icon">
+                                    <i class="bi bi-pc-display"></i>
+                                </div>
+                                <h3 class="card_heading_black">Embedded Product Development</h3>
+
+                                <p>IOT Solutions
+                                    Embedded Software
+                                    Hardware Design
+                                    Web Applications
+                                    Mobile Applications
+                                    Cloud Solutions.</p>
                             </div>
-                            <a href="about.html" class="stretched-link">
-                                <h3>Embedded Product Development</h3>
-                            </a>
-                            <p>End-to-end embedded product engineering, from concept to deployment, delivering scalable and market-ready solutions.</p>
-                        </div>
+                        </a>
                     </div>
 
-                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-                        <div class="service-item item-orange position-relative">
-                            <div class="icon">
-                                <i class="bi bi-hdd-rack"></i>
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <a href="hardware-design.html">
+                            <div class="key-card">
+                                <div class="key-icon">
+                                    <i class="bi bi-hdd-rack"></i>
+                                </div>
+                                <h3 class="card_heading_black">Hardware Design</h3>
+                                <p>Electronics Design
+                                    Schematic, PCB Design and layout
+                                    High Speed Complex PCB Design
+                                    Power Management Design
+                                    Testing, Certification & Compliance.</p>
                             </div>
-                            <a href="about.html" class="stretched-link">
-                                <h3>Hardware Design</h3>
-                            </a>
-                            <p>Design and prototyping of reliable hardware systems, including PCB layout, power management, and compliance support.</p>
-                        </div>
+                        </a>
                     </div>
 
-                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-                        <div class="service-item item-teal position-relative">
-                            <div class="icon">
-                                <i class="bi bi-cpu"></i>
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <a href="embedded-system-design.html">
+                            <div class="key-card">
+                                <div class="key-icon">
+                                    <i class="bi bi-cpu"></i>
+                                </div>
+                                <h3 class="card_heading_black">Embedded System Design</h3>
+                                <p>Firmware & Middleware
+                                    Embedded Applications
+                                    Mobile Applications.</p>
                             </div>
-                            <a href="about.html" class="stretched-link">
-                                <h3>Embedded System Design</h3>
-                            </a>
-                            <p>Custom embedded firmware and software design for microcontrollers, real-time systems, and performance-critical devices.</p>
-                        </div>
+                        </a>
                     </div>
 
-                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-                        <div class="service-item item-red position-relative">
-                            <div class="icon">
-                                <i class="bi bi-tags"></i>
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <a href="white-label-oem-services.html">
+                            <div class="key-card">
+                                <div class="key-icon">
+                                    <i class="bi bi-tags"></i>
+                                </div>
+                                <h3 class="card_heading_black">White Label & OEM Services</h3>
+
+                                <p>Smart Switch
+                                    Smart Fans
+                                    Energy Monitoring Solutions
+                                    Sensor Interface Modules (Analog/Digital)
+                                    4-20mA convertor
+                                    RS485/Modbus to IoT Gateways
+                                    Wireless Data Acquisition Units.</p>
                             </div>
-                            <a href="about.html" class="stretched-link">
-                                <h3>White Label & OEM Services</h3>
-                            </a>
-                            <p>Accelerate your go-to-market with white-labeled, customizable embedded products designed to match your brand identity.</p>
-                        </div>
+                        </a>
                     </div>
 
-                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
-                        <div class="service-item item-indigo position-relative">
-                            <div class="icon">
-                                <i class="bi bi-gear-wide-connected"></i>
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <a href="mechanical-engineering.html">
+                            <div class="key-card">
+                                <div class="key-icon">
+                                    <i class="bi bi-gear-wide-connected"></i>
+                                </div>
+                                <h3 class="card_heading_black">Mechanical Engineering</h3>
+                                <p>Product Design
+                                    Enclosure
+                                    3D Modelling
+                                    IP Certifications.</p>
                             </div>
-                            <a href="about.html" class="stretched-link">
-                                <h3>Mechanical Engineering</h3>
-                            </a>
-                            <p>Precision mechanical design services including enclosures, thermal analysis, and CAD modeling for embedded devices.</p>
-                        </div>
+                        </a>
                     </div>
 
-                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
-                        <div class="service-item item-pink position-relative">
-                            <div class="icon">
-                                <i class="bi bi-wifi"></i>
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <a href="iot-solution.html">
+                            <div class="key-card">
+                                <div class="key-icon">
+                                    <i class="bi bi-wifi"></i>
+                                </div>
+                                <h3 class="card_heading_black">IoT Solution</h3>
+                                <p>IOT Consulting
+                                    Smart Home
+                                    Consumer IOT
+                                    Industrial IOT
+                                    Health care IOT.</p>
                             </div>
-                            <a href="about.html" class="stretched-link">
-                                <h3>IoT Solution</h3>
-                            </a>
-                            <p>Full-stack IoT development including edge devices, gateways, cloud integration, and real-time monitoring dashboards.</p>
-                        </div>
+                        </a>
                     </div>
 
                 </div>
+
             </div>
         </section>
 
-        <section id="portfolio" class="portfolio section">
 
-            <div class="container section-title" data-aos="fade-up">
+        <section class="portfolio section" id="portfolio">
+
+            <div class="section-title container" data-aos="fade-up">
                 <h2>Our Works</h2>
                 <p>Explore our recent projects across design, development, branding, and emerging tech solutions.</p>
             </div>
 
             <div class="container">
-                <div class="isotope-layout new_portfolio_class" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+                <div class=" new_portfolio_class isotope-layout" data-default-filter="*" data-layout="masonry"
+                    data-sort="original-order">
 
                     <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
                         <li class="filter-active">All</li>
@@ -284,17 +304,15 @@
 
     </main>
 
-    <footer id="footer" class="footer dark-background">
-
-        <div class="container footer-top">
-            <div class="row gy-4">
+    <footer class="dark-background footer" id="footer">
+        <div class="footer-top container">
+            <div class="gy-4 row">
 
                 <div class="col-lg-4 col-md-6 footer-about">
                     <a href="index.html" class="logo d-flex align-items-center">
                         <span class="client_name">Skylyn</span>
                     </a>
-
-                    <div class="footer-contact pt-3">
+                    <div class="pt-3 footer-contact">
                         <p>42 Attur Road</p>
                         <p>Salem, Tamil Nadu 636456</p>
                         <p class="mt-3"><strong>Phone:</strong> <span>+91 98765 43210</span></p>
@@ -307,28 +325,25 @@
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About Us</a></li>
-                        <!-- <li><a href="#">Products</a></li>
-                        <li><a href="#">Solutions</a></li> -->
-                        <!-- <li><a href="contact.html">Contact Us</a></li> -->
                     </ul>
                 </div>
 
                 <div class="col-lg-4 col-md-3 footer-links">
                     <h4>Engineering Services</h4>
                     <ul>
-                        <li><a href="index.html">Embedded Product Development</a></li>
-                        <li><a href="index.html">Hardware Design</a></li>
-                        <li><a href="index.html">Embedded System Design</a></li>
-                        <li><a href="index.html">White Label & OEM Services</a></li>
-                        <li><a href="index.html">Mechanical Engineering</a></li>
-                        <li><a href="index.html">IoT Solution</a></li>
+                        <li><a href="embedded-product-development.html">Embedded Product Development</a></li>
+                        <li><a href="hardware-design.html">Hardware Design</a></li>
+                        <li><a href="embedded-system-design.html">Embedded System Design</a></li>
+                        <li><a href="white-label-oem-services.html">White Label & OEM Services</a></li>
+                        <li><a href="mechanical-engineering.html">Mechanical Engineering</a></li>
+                        <li><a href="iot-solution.html">IoT Solution</a></li>
                     </ul>
                 </div>
 
             </div>
         </div>
 
-        <div class="container copyright text-center mt-4 d-flex justify-content-evenly">
+        <div class="copyright text-center mt-4 d-flex justify-content-evenly container">
             <div class="header-social-links">
                 <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>&nbsp;&nbsp;
                 <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>&nbsp;&nbsp;
@@ -338,16 +353,16 @@
 
             <p>
                 © <span>Copyright</span>
-                <strong class="px-1 client_name">
-    <a href="index.html">Skylyn</a>
-  </strong>
+                <strong class="client_name px-1">
+                    <a href="index.html">Skylyn</a>
+                </strong>
                 <span>All Rights Reserved</span>
             </p>
         </div>
 
     </footer>
 
-    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+    <a href="#" class="d-flex align-items-center justify-content-center scroll-top" id="scroll-top"><i
             class="bi bi-arrow-up-short"></i></a>
 
     <div id="preloader"></div>
@@ -360,7 +375,6 @@
     <script src="modules/isotope-layout/isotope.pkgd.min.js"></script>
     <script src="modules/waypoints/noframework.waypoints.js"></script>
     <script src="modules/swiper/swiper-bundle.min.js"></script>
-
     <script src="script.js"></script>
 </body>
 
